@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PeduliTomat </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../../app/static/img/loogo.png">
+  <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+
+  <!-- Vendor CSS Files -->
+  
+  <link rel="stylesheet" href="../../app/static/css/aos.css">
+  <link rel="stylesheet" href="../../app/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../app/static/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../app/static/css/boxicons.min.css">
+  <link rel="stylesheet" href="../../app/static/css/glightbox.min.css">
+  <link rel="stylesheet" href="../../app/static/css/remixicon.css">
+  <link rel="stylesheet" href="../../app/static/css/swiper-bundle.min.css">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="../../app/static/css/style.css">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.9.2
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo">
+        <a href="index.html" class="logo"><img src="/app/static/img/loogo.png" alt="" class="img-fluid"></a>
+        <a href="index.html">FiTech</a>
+      </h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          
+          <h1>PeduliTomat</h1>
+          <h2>your daily tomato checker</h2>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#about" class="btn-get-started scrollto">Learn More</a>
+      </div>
+
+      
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>
+             
+            INIIII PENJELASAN APLIKASI YA GENGSS. </p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              PeduliTomat merupakan pendeteksi penyakit pada tanaman tomat berdasarkan corak pada daun berbasis website dengan beberapa keunggulan. 
+              
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Lebih fleksibel.</li>
+              <li><i class="ri-check-double-line"></i> Dapat digunakan setiap saat.</li>
+              <li><i class="ri-check-double-line"></i> Gratis.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Dengan adanya website ini diharapkan dapat membantu petani dalam mendeteksi penyakit pada tanaman tomat sekaligus mengetahui ara mengatasi serta menghindari terjadinya hal yang sama di masa depan.
+              nanti dijelasin disini . . . . . .
+            </p>
+            <a href="#services" class="btn-learn-more">Get started</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Di sini nanti aplikasinya yah frennn.</p>
+        </div>
+        <!-- Bagian Halaman (Aplikasi) -->
+	    <div id="aplikasi" data-bs-spy="scroll" data-bs-target="#navgo" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+		    <br>
+		    <br>
+		    <div class="row">
+			    <div class="col-lg-6">
+				    </br>
+				    <h3 style="margin-left: 50px;">Upload Here ...</h3>
+					    <form style="margin-left: 50px;">
+						    <!-- Input atau Upload Gambar dari Pengguna -->
+						    <img src={{ url_for('static', filename='/images/ex-upload.JPG') }} width="300" ></img>
+						    <p>silahkan upload sebuah gambar</p>
+						    <p>
+							    <input type="file" id="input_gambar" name="file">
+						    </p>
+						    </br>
+						    <!-- Tombol Prediksi -->
+						    <button type="submit" id="prediksi_submit" class="btn btn-default btn-lg">Predict Now</button>
+					    </form>
+			    </div>
+			    <div class="col-sm-6">
+				    <br>
+				    <!-- Bagian Halaman untuk Hasil Prediksi -->
+				    <div id="hasil_prediksi" align="center">
+					    <!-- Hasil Prediksi akan ditampilkan di sini-->
+				    </div>
+			    </div>
+		    </div>
+        </br>
+        </br>
+        </br>
+        </br>
+	      </div>
+        
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Penyakit ini disebabkan oleh beberapa bakteri yang berasal dari genus Xanthomonas. Selain daun, bakteri ini juga dapat menyerang batang dan buah tomat itu sendiri. 
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Bacterial Spot.jpg" class="testimonial-img" alt="">
+                <h3>Bacterial Spot</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/300050/bacterial-spot-and-speck-of-tomato " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Penyakit ini disebabkan oleh jamur Alternia Solani. Bagian bawah daun sering terinfeksi ketika kontak dengan tanah yang terkontaminasi.
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Early Blight.jpg" class="testimonial-img" alt="">
+                <h3>Early Blight</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/100321/early-blight  " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Late Blight banyak menyerang tomat melalui sobekan kulit ketika pertengahan musim panas atau ketika kelembaban relatif tinggi, yakni sekitar 90%. 
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Late Blight.jpg" class="testimonial-img" alt="">
+                <h3>Late Blight</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/100046/tomato-late-blight " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Leaf Mold pada tanaman tomat disebabkan oleh jamur Mycovellosiella fulva pada lingkungan dengan kelembaban 85% yang berkepanjangan.
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Leaf Mold.jpg" class="testimonial-img" alt="">
+                <h3>Leaf Mold</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/100257/leaf-mold-of-tomato " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Penyakit ini terjadi setelah tanaman tomat terserang oleh jamur Septoria lycopersici dari batang dan daun tertua ke yang termuda. 
+                  <br>
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Septoria leaf spot.jpg" class="testimonial-img" alt="">
+                <h3>Septoria leaf spot</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/100152/septoria-leaf-spot  " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Seperti namanya, Spider mites disebabkan oleh laba-laba dari genus Tetranychus, seperti T. urticae dan T. cinnabarinus.
+                  <br>
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Spider mites.jpg" class="testimonial-img" alt="">
+                <h3>Spider mites</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/500004/spider-mites " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Pada target spot biasanya tomat yang sudah matang dan menampilkan bintik melingkar dengan cincin konsentris.
+                  <br>
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Target spot.jpg" class="testimonial-img" alt="">
+                <h3>Target spot</h3>
+                <a href="https://id.haenselblatt.com/target-spot-tomato-fruit-tips-treating-target-spot-tomatoes " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Penyakit ini menyebabkan buah yang dihasilkan lebih sedikit. Yellow Leaf Curl Virus disebarkan oleh lalat putih dari spesies Bernisia tabaci.
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Yellow Leaf Curl Virus.jpg" class="testimonial-img" alt="">
+                <h3>Yellow Leaf Curl Virus</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/200036/tomato-yellow-leaf-curl-virus " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Tanah kering yang dibiarkan selama lebih dari 2 tahun menjadi sarang virus penyebab penyakit Mosaic virus.
+                  <br>
+                  <br>
+                  Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="../../app/static/img/penyakit/Mosaic virus.jpg" class="testimonial-img" alt="">
+                <h3>Mosaic virus</h3>
+                <a href="https://plantix.net/id/library/plant-diseases/200037/tobacco-mosaic-virus " >More info</a>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+        </div>
+
+      </div>
+    </section><!-- End Sevices Section -->
+
+
+    
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div id="anggotaKelompok" class="container-fluid text-center">
+          <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+
+              <div class="section-title">
+                <br>
+                <h2>Team</h2>
+                <p>Kami adalah Kelompok fibo satu, kelompok paling asik dan juga paling solid okeokee</p>
+                <br>
+              </div>
+              <div class="row slidenim">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="../../app/static/img/team/team-5.png" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href="https://www.linkedin.com/in/faiqoh-rohadatul-aisy-28158a229/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/faiqohaisy"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h5>Faiqoh Rohadatul Aisy</h5>
+                      <p>Universitas Gadjah Mada</p>
+                      <span>front-end</span>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="../../app/static/img/team/Artboard 1.png" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href="https://www.linkedin.com/in/farisan-izdihar-arvin-taqy-029b77238/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/ArvinTaqy"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h5>Farisan Izdihar Arvin Taqy</h5>
+                      <p>Universitas Gadjah Mada</p>
+                      <span>fornt-end</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+
+              <div class="row slidenim">
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="../../app/static/img/team/team-7.png" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href="https://www.linkedin.com/in/ghinasalmasusilo/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Ghinasalma05"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h5>Ghina Salma Susilo</h5>
+                      <p>Universitas Gadjah Mada</p>
+                      <span>back-end</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="../../app/static/img/team/team-8.png" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href="https://www.linkedin.com/in/burhan-syarif-acarya-6a630a222/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/burhansyarif"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h5>Burhan Syarif Acarya</h5>
+                      <p>UPN Veteran Jawa Timur</p>
+                      <span>back-end</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="../../app/static/img/team/team-9.png" class="img-fluid" alt="">
+                      <div class="social">
+                        <a href="https://www.linkedin.com/in/cenditya-ayu-aurelia"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/cendityaaurelia"><i class="bi bi-github"></i></a>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <h5>Cenditya Ayu Aurelia</h5>
+                      <p>UPN Veteran Jawa Timur</p>
+                      <span>back-end</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../app/static/js/purecounter_vanilla.js"></script>
+  <script src="../../app/static/js/aos.js"></script>
+  <script src="../../app/static/js/bootstrap.bundle.min.js"></script>
+  <script src="../../app/static/js/glightbox.min.js"></script>
+  <script src="../../app/static/js/isotope.pkgd.min.js"></script>
+  <script src="../../app/static/js/swiper-bundle.min.js"></script>
+  <script src="../../app/static/js/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../app/static/js/main.js"></script>
+
+</body>
+
+</html>
