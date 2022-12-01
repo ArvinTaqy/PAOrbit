@@ -10,14 +10,25 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link rel="icon" href="../../app/static/img/loogo.png">
+  <link rel="icon" href="{{ url_for('static' , filename='img/loogo.png' )}}">
+  <!--<link rel="icon" href="../../app/static/img/loogo.png">-->
   <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
-
-  <!-- Vendor CSS Files -->
   
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/aos.css' )}}">
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/bootstrap.min.css' )}}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!--<link rel="stylesheet" href="{{ url_for('static' , filename='css/bootstrap-icons.css' )}}">-->
+  <!--<link rel="stylesheet" href="{{ url_for('static' , filename='css/bootstrap-icons.css' )}}">-->
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/boxicons.min.css' )}}">
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/glightbox.min.css' )}}">
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/remixicon.css' )}}">
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/swiper-bundle.min.css' )}}">
+  
+  <!--
   <link rel="stylesheet" href="../../app/static/css/aos.css">
   <link rel="stylesheet" href="../../app/static/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../app/static/css/bootstrap-icons.css">
@@ -25,9 +36,10 @@
   <link rel="stylesheet" href="../../app/static/css/glightbox.min.css">
   <link rel="stylesheet" href="../../app/static/css/remixicon.css">
   <link rel="stylesheet" href="../../app/static/css/swiper-bundle.min.css">
-
+  -->
   <!-- Template Main CSS File -->
-  <link rel="stylesheet" href="../../app/static/css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static' , filename='css/style.css' )}}">
+  <!--<link rel="stylesheet" href="../../app/static/css/style.css">-->
 
   <!-- =======================================================
   * Template Name: OnePage - v4.9.2
@@ -38,13 +50,13 @@
 </head>
 
 <body>
-
+<!--{{ url_for('static', filename='')}}-->
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo">
-        <a href="index.html" class="logo"><img src="/app/static/img/loogo.png" alt="" class="img-fluid"></a>
+        <a href="index.html" class="logo"><img src="{{ url_for('static', filename='img/loogo.png')}}" alt="" class="img-fluid"></a>
         <a href="index.html">FiTech</a>
       </h1>
       <nav id="navbar" class="navbar">
@@ -136,7 +148,7 @@
 				    <h3 style="margin-left: 50px;">Upload Here ...</h3>
 					    <form style="margin-left: 50px;">
 						    <!-- Input atau Upload Gambar dari Pengguna -->
-						    <img src={{ url_for('static', filename='/images/ex-upload.JPG') }} width="300" ></img>
+						    <img src="{{ url_for('static', filename='/img/loogo.png') }}" width="300" ></img>
 						    <p>silahkan upload sebuah gambar</p>
 						    <p>
 							    <input type="file" id="input_gambar" name="file">
@@ -176,7 +188,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Bacterial Spot.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Bacterial Spot.jpg')}}" class="testimonial-img" alt="">
                 <h3>Bacterial Spot</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/300050/bacterial-spot-and-speck-of-tomato " >More info</a>
               </div>
@@ -191,7 +203,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Early Blight.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Early Blight.jpg')}}" class="testimonial-img" alt="">
                 <h3>Early Blight</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/100321/early-blight  " >More info</a>
               </div>
@@ -206,7 +218,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Late Blight.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Late Blight.jpg')}}" class="testimonial-img" alt="">
                 <h3>Late Blight</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/100046/tomato-late-blight " >More info</a>
               </div>
@@ -221,7 +233,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Leaf Mold.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Leaf Mold.jpg')}}" class="testimonial-img" alt="">
                 <h3>Leaf Mold</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/100257/leaf-mold-of-tomato " >More info</a>
               </div>
@@ -237,7 +249,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Septoria leaf spot.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Septoria leaf spot.jpg')}}" class="testimonial-img" alt="">
                 <h3>Septoria leaf spot</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/100152/septoria-leaf-spot  " >More info</a>
               </div>
@@ -253,7 +265,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Spider mites.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Spider mites.jpg')}}" class="testimonial-img" alt="">
                 <h3>Spider mites</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/500004/spider-mites " >More info</a>
               </div>
@@ -269,7 +281,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Target spot.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Target spot.jpg')}}" class="testimonial-img" alt="">
                 <h3>Target spot</h3>
                 <a href="https://id.haenselblatt.com/target-spot-tomato-fruit-tips-treating-target-spot-tomatoes " >More info</a>
               </div>
@@ -284,7 +296,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Yellow Leaf Curl Virus.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Yellow Leaf Curl Virus.jpg')}}" class="testimonial-img" alt="">
                 <h3>Yellow Leaf Curl Virus</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/200036/tomato-yellow-leaf-curl-virus " >More info</a>
               </div>
@@ -300,7 +312,7 @@
                   Klik More Info untuk informasi mengenai penyembuhan dan cara menghindari.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="../../app/static/img/penyakit/Mosaic virus.jpg" class="testimonial-img" alt="">
+                <img src="{{ url_for('static', filename='img/penyakit/Mosaic virus.jpg')}}" class="testimonial-img" alt="">
                 <h3>Mosaic virus</h3>
                 <a href="https://plantix.net/id/library/plant-diseases/200037/tobacco-mosaic-virus " >More info</a>
               </div>
@@ -340,7 +352,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                   <div class="member">
                     <div class="member-img">
-                      <img src="../../app/static/img/team/team-5.png" class="img-fluid" alt="">
+                      <img src="{{ url_for('static', filename='/img/team/team-5.png')}}" class="img-fluid" alt="">
                       <div class="social">
                         <a href="https://www.linkedin.com/in/faiqoh-rohadatul-aisy-28158a229/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/faiqohaisy"><i class="bi bi-github"></i></a>
@@ -357,7 +369,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                   <div class="member">
                     <div class="member-img">
-                      <img src="../../app/static/img/team/Artboard 1.png" class="img-fluid" alt="">
+                      <img src="{{ url_for('static', filename='img/team/Artboard 1.png')}}" class="img-fluid" alt="">
                       <div class="social">
                         <a href="https://www.linkedin.com/in/farisan-izdihar-arvin-taqy-029b77238/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/ArvinTaqy"><i class="bi bi-github"></i></a>
@@ -377,7 +389,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                   <div class="member">
                     <div class="member-img">
-                      <img src="../../app/static/img/team/team-7.png" class="img-fluid" alt="">
+                      <img src="{{ url_for('static', filename='/img/team/team-7.png')}}" class="img-fluid" alt="">
                       <div class="social">
                         <a href="https://www.linkedin.com/in/ghinasalmasusilo/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/Ghinasalma05"><i class="bi bi-github"></i></a>
@@ -394,7 +406,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
                   <div class="member">
                     <div class="member-img">
-                      <img src="../../app/static/img/team/team-8.png" class="img-fluid" alt="">
+                      <img src="{{ url_for('static', filename='/img/team/team-8.png')}}" class="img-fluid" alt="">
                       <div class="social">
                         <a href="https://www.linkedin.com/in/burhan-syarif-acarya-6a630a222/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/burhansyarif"><i class="bi bi-github"></i></a>
@@ -411,7 +423,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                   <div class="member">
                     <div class="member-img">
-                      <img src="../../app/static/img/team/team-9.png" class="img-fluid" alt="">
+                      <img src="{{ url_for('static', filename='/img/team/team-9.png')}}" class="img-fluid" alt="">
                       <div class="social">
                         <a href="https://www.linkedin.com/in/cenditya-ayu-aurelia"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/cendityaaurelia"><i class="bi bi-github"></i></a>
@@ -454,6 +466,16 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='js/purecounter_vanilla.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/aos.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/glightbox.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/swiper-bundle.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/validate.js')}}"></script>
+
+
+  <!--
   <script src="../../app/static/js/purecounter_vanilla.js"></script>
   <script src="../../app/static/js/aos.js"></script>
   <script src="../../app/static/js/bootstrap.bundle.min.js"></script>
@@ -461,10 +483,13 @@
   <script src="../../app/static/js/isotope.pkgd.min.js"></script>
   <script src="../../app/static/js/swiper-bundle.min.js"></script>
   <script src="../../app/static/js/validate.js"></script>
+  -->
 
   <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+  <!--
   <script src="../../app/static/js/main.js"></script>
-
+  -->
 </body>
 
 </html>
