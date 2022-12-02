@@ -26,21 +26,21 @@ app = Flask(__name__, static_url_path='/static')
 
 app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024
 app.config['UPLOAD_EXTENSIONS']  = ['.jpg','.JPG','png','PNG']
-app.config['UPLOAD_PATH']        = './static/images/uploads/'
+app.config['UPLOAD_PATH']        = './static/img/uploads/'
 
 model = None
 
 n_classes = 10
-class_names = ['Tomato___Bacterial_spot',
-				'Tomato___Early_blight',
-				'Tomato___Late_blight',
-				'Tomato___Leaf_Mold',
-				'Tomato___Septoria_leaf_spot',
-				'Tomato___Spider_mites Two-spotted_spider_mite',
-				'Tomato___Target_Spot',
-				'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
-				'Tomato___Tomato_mosaic_virus',
-				'Tomato___healthy']
+class_names = ['Bacterial Spot',
+				'Early Blight',
+				'Late Blight',
+				'Leaf Bold',
+				'Septoria Leaf Spot',
+				'Spider Mites',
+				'Target Spot',
+				'Tomato Yellow Leaf Curl Virus',
+				'Tomato Mosaic Virus',
+				'Healthy']
 
 # =[Routing]=====================================
 
@@ -103,9 +103,7 @@ def apiDeteksi():
 				"prediksi": hasil_prediksi,
 				"gambar_prediksi" : gambar_prediksi
 			})
-
-
-
+			
 # =[Main]========================================		
 
 if __name__ == '__main__':
