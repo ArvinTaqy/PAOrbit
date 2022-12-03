@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #2487ce;
+  color: #87986A;
   text-decoration: none;
 }
 
 a:hover {
-  color: #469fdf;
+  color: #87986A;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #2487ce;
+  background: #87986A;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -393,7 +393,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #2487ce;
+  color: #718355;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -450,7 +450,7 @@ h6 {
   display: inline-block;
   padding: 14px 50px;
   border-radius: 5px;
-  transition: 2s;
+  transition: 0.3s;
   margin-top: 30px;
   color: #87986A;
   background: #fff;
@@ -486,7 +486,7 @@ h6 {
 }
 
 #hero .icon-box .title a {
-  color: #124265;
+  color: #718355;
   transition: 0.3s;
 }
 
@@ -503,7 +503,7 @@ h6 {
   transition: all 0.3s ease-in-out;
   font-size: 36px;
   line-height: 1;
-  color: #2487ce;
+  color: #718355;
 }
 
 #hero .icon-box:hover {
@@ -511,7 +511,7 @@ h6 {
 }
 
 #hero .icon-box:hover .title a {
-  color: #2487ce;
+  color: #718355;
 }
 
 @media (min-width: 1024px) {
@@ -574,6 +574,13 @@ section {
   color: #919191;
 }
 
+a {
+  color: #718355;
+}
+
+a:hover {
+  color: black;
+}
 
 /*--------------------------------------------------------------
 # About
@@ -719,7 +726,8 @@ section {
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -756,6 +764,7 @@ section {
   transition: ease-in-out 0.3s;
   position: relative;
 }
+
 .col-lg-6 h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 32px;
@@ -764,6 +773,17 @@ section {
   transition: 0.5s;
 
 }
+
+.col-lg-3 h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #87986A;
+  transition: 0.5s;
+  text-align: center;
+
+}
+
 
 .col-sm-6 h3 {
   font-family: "Open Sans", sans-serif;
@@ -777,7 +797,8 @@ section {
 .col-sm-6 h4 {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  color: #87986A;
+  font-weight: bold;
+  color: #B5C99A;
   transition: 0.5s;
 
 }

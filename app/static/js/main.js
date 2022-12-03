@@ -316,7 +316,61 @@
           str += "<h3>Hasil Prediksi </h3>";
           str += "<br>";
           str += "<img src='" + image_prediksi + "' width=\"200\"></img>"
-          str += "<h3>" + data_prediksi + "</h3>";
+          str += "<br>";
+          str += "<br>";
+          str += "<h4>" + data_prediksi + "</h4>";
+          
+          if(data_prediksi == 'Bacterial Spot') {
+            str += "<br>";
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Early Blight') {
+            str += "<br>";
+
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Late Blight') {
+            str += "<br>";
+
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Septoria Leaf Spot') {
+            str += "<br>";
+
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Spider Mites') {
+            str += "<br>";
+
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Target Spot') {
+            str += "<br>";
+
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Tomato Yellow Leaf Curl Virus') {
+            str += "<br>";
+
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Tomato Mosaic Virus') {
+            str += "<br>";
+  
+            str += "<a href='#testimonials'>Klik di sini untuk melihat solusi</a>";
+          }
+
+          if(data_prediksi == 'Healthy'){
+            str += "<br>";
+            str += "<h4>Hore tanaman tomat kamu SEHAT!</h4>";
+          }
       }
       $("#hasil_prediksi").html(str);
     }       
